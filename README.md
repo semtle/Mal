@@ -1,4 +1,4 @@
-Mal.js
+Mal
 ======
 
-Mal.js is a light-weight JavaScript Korean TTS.
+Mal is a light-weight Java Korean TTS.
