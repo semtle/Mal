@@ -6,7 +6,7 @@ package mal;
 class AttributedPhone {
     private FlatPhone flatPhone;
 
-    private float pitch;
+    private Wave pitch;
 
-    private float speed;
+    private Wave speed;
 }
