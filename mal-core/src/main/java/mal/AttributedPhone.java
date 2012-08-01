@@ -1,8 +1,5 @@
 package mal;
 
-/**
- * @author Teddy Choi
- */
 class AttributedPhone {
     private FlatPhone flatPhone;
 

@@ -2,8 +2,10 @@ package mal;
 
 import java.io.File;
 
+
 /**
- * A {@code FlatPhone} represents a unit of spoken language. In other words, a phone is a spoken phoneme in a voice.
+ * A {@code FlatPhone} represents a unit of spoken language. In other words, a phone is a spoken
+ * phoneme in a voice.
  *
  * @see Voice#phone(Phoneme)
  */

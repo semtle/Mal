@@ -2,6 +2,7 @@ package mal;
 
 import java.util.List;
 
+
 /**
  * A {@code Speaker} speaks a text in a voice.
  */

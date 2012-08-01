@@ -3,9 +3,7 @@ package mal;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author Teddy Choi
- */
+
 class Prompter {
     private List<AttributedPhone> script;
 
