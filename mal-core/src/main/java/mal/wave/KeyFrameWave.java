@@ -1,4 +1,4 @@
-package mal;
+package mal.wave;
 
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -10,7 +10,6 @@ import java.util.TreeMap;
 public class KeyFrameWave implements Wave {
     private SortedMap<Float, Float> keyFrames = new TreeMap<Float, Float>();
 
-    @Override
     public float value(float time) {
         KeyFrame earlierKeyFrame = getEarlierKeyFrame(time);
         KeyFrame laterOrExactKeyFrame = getLaterOrExactKeyFrame(time);

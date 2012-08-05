@@ -1,5 +1,7 @@
 package mal;
 
+import mal.korean.voice.AttributedPhone;
+
 import java.util.ArrayList;
 import java.util.List;
 

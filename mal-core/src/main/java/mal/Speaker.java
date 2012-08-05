@@ -1,5 +1,11 @@
 package mal;
 
+import mal.korean.grapheme.SyllabicBlockSequence;
+import mal.korean.grapheme.SyllabicBlockSequenceBuilder;
+import mal.korean.phoneme.PhonemeSequenceBuilder;
+import mal.korean.voice.AttributedPhone;
+import mal.korean.voice.Voice;
+
 import java.util.List;
 
 
@@ -11,14 +17,15 @@ public class Speaker {
 
     private Voice voice;
 
-    private Analyzer analyzer;
+    private PhonemeSequenceBuilder phonemeSequenceBuilder;
 
     private AudioPlayer audioPlayer;
 
     private AttributedPhone currentAttributedPhone;
 
     public void speak(String text) {
-        List<AttributedPhone> analyzed = analyzer.analyze(text);
+        SyllabicBlockSequence syllabicBlockSequence = SyllabicBlockSequenceBuilder.build(text);
+        List<AttributedPhone> analyzed = phonemeSequenceBuilder.analyze(syllabicBlockSequence);
         prompter.prepare(analyzed);
         while (prompter.hasNext()) {
             currentAttributedPhone = prompter.next();

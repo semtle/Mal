@@ -1,9 +1,9 @@
-package mal;
+package mal.korean.phoneme;
 
 /**
  * A {@code Phoneme} represents a cognitive unit of spoken language.
  */
-class Phoneme {
+public class Phoneme {
     static Phoneme phoneme(char ch) {
         throw new UnsupportedOperationException();
     }

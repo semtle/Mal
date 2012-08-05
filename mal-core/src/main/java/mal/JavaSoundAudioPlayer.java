@@ -1,8 +1,7 @@
 package mal;
 
-/**
- * @author Teddy Choi
- */
+import mal.korean.voice.AttributedPhone;
+
 public class JavaSoundAudioPlayer implements AudioPlayer {
     public void playAndWait(AttributedPhone attributedPhone) {
         throw new UnsupportedOperationException();

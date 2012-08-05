@@ -1,4 +1,6 @@
-package mal;
+package mal.korean.voice;
+
+import mal.korean.phoneme.Phoneme;
 
 import java.io.File;
 import java.util.Map;
@@ -7,7 +9,7 @@ import java.util.Map;
 /**
  * A {@code Voice} is a set of {@code FlatPhone}s.
  */
-class Voice {
+public class Voice {
     private String name;
 
     private File directory;
