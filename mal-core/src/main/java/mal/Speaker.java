@@ -10,7 +10,7 @@ import mal.language.process.SyllableSequenceProcessor;
 import mal.language.phoneme.AttributedSyllabicBlockSequence;
 import mal.language.letter.SyllableSequence;
 import mal.language.letter.SyllableSequenceBuilder;
-import mal.language.phoneme.AttributedPhonemeSequence;
+import mal.language.voice.AttributedPhonemeSequence;
 import mal.language.voice.AttributedPhone;
 import mal.language.voice.PhoneSet;
 

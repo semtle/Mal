@@ -1,5 +1,7 @@
 package mal.language.phoneme;
 
+import mal.language.voice.AttributedPhonemeSequence;
+
 /**
  * InitialLetter-medial and medial-final builder.
  */

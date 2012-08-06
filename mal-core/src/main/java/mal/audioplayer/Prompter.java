@@ -1,10 +1,7 @@
 package mal.audioplayer;
 
-import mal.language.phoneme.AttributedPhonemeSequence;
+import mal.language.voice.AttributedPhonemeSequence;
 import mal.language.voice.AttributedPhone;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class Prompter {
