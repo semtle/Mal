@@ -1,7 +1,6 @@
 package mal.speak;
 
-import mal.language.phone.attribute.AttributedPhoneme;
-import mal.language.phone.attribute.AttributedPhone;
+import mal.language.phoneme.attribute.AttributedPhoneme;
 
 import java.util.List;
 

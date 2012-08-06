@@ -1,11 +1,9 @@
 package mal.language.voice;
 
-import mal.language.phone.Phoneme;
-import mal.language.phone.attribute.AttributedPhone;
-import mal.language.phone.attribute.AttributedPhoneme;
+import mal.language.phoneme.Phoneme;
+import mal.language.phoneme.attribute.AttributedPhoneme;
 
 import java.io.File;
-import java.util.List;
 import java.util.Map;
 
 

@@ -1,15 +1,15 @@
 package mal.language.voice;
 
-import mal.language.phone.Phoneme;
+import mal.language.phoneme.Phoneme;
 
 import java.io.File;
 
 
 /**
- * A {@code NormalPhone} represents a unit of spoken language. In other words, a phone is a spoken
+ * A {@code NormalPhone} represents a unit of spoken language. In other words, a phoneme is a spoken
  * splitter in a phoneSet.
  *
- * @see PhoneSet#phone(mal.language.phone.Phoneme)
+ * @see PhoneSet#phone(mal.language.phoneme.Phoneme)
  */
 public class NormalPhone {
     private Phoneme phoneme;
