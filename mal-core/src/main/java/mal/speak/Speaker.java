@@ -1,17 +1,19 @@
 package mal.speak;
 
 import mal.audioplayer.AudioPlayer;
+import mal.language.letter.Syllable;
+import mal.language.letter.SyllableListBuilder;
+import mal.language.phone.attribute.AttributedPhoneme;
+import mal.language.phone.attribute.AttributedSyllabicBlock;
 import mal.language.phone.attribute.Attributor;
 import mal.language.phone.attribute.RokStandardAttributor;
 import mal.language.phone.splitter.Splitter;
 import mal.language.phone.process.CompositeProcessor;
 import mal.language.phone.process.SyllableSequenceProcessor;
-import mal.language.phone.attribute.AttributedSyllabicBlockSequence;
-import mal.language.letter.SyllableSequence;
-import mal.language.letter.SyllableSequenceBuilder;
-import mal.language.phone.attribute.AttributedPhonemeSequence;
 import mal.language.phone.attribute.AttributedPhone;
 import mal.language.voice.PhoneSet;
+
+import java.util.List;
 
 
 /**
@@ -27,13 +29,13 @@ public class Speaker {
     private Attributor attributor = new RokStandardAttributor();
 
     public void speak(String text) {
-        SyllableSequence originalSyllableSequence = SyllableSequenceBuilder.build(text);
-        SyllableSequence filteredSyllableSequence = filter.process(originalSyllableSequence);
-        AttributedSyllabicBlockSequence attributedSyllabicBlock = attributor.attribute(filteredSyllableSequence);
-        AttributedPhonemeSequence phonemeSequence = splitter.build(attributedSyllabicBlock);
-        prompter.prepare(phonemeSequence);
+        List<Syllable> originalSyllables = SyllableListBuilder.build(text);
+        List<Syllable> filteredSyllables = filter.process(originalSyllables);
+        List<AttributedSyllabicBlock> attributedSyllabicBlock = attributor.attribute(filteredSyllables);
+        List<AttributedPhoneme> phonemes = splitter.build(attributedSyllabicBlock);
+        prompter.prepare(phonemes);
         while (prompter.hasNext()) {
-            currentAttributedPhone = prompter.next();
+            currentAttributedPhone = phoneSet.map(prompter.next());
             audioPlayer.playAndWait(currentAttributedPhone);
         }
     }

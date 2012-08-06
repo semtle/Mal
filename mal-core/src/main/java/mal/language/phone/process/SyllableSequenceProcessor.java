@@ -1,7 +1,9 @@
 package mal.language.phone.process;
 
-import mal.language.letter.SyllableSequence;
+import mal.language.letter.Syllable;
+
+import java.util.List;
 
 public interface SyllableSequenceProcessor {
-    SyllableSequence process(SyllableSequence normalizedSyllableSequence);
+    List<Syllable> process(List<Syllable> syllables);
 }

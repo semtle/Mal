@@ -1,4 +1,4 @@
 package mal.language.phone.attribute;
 
-public class AttributedPhonemeSequence {
+public class AttributedPhoneme {
 }

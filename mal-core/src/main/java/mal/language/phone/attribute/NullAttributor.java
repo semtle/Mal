@@ -1,10 +1,12 @@
 package mal.language.phone.attribute;
 
-import mal.language.letter.SyllableSequence;
+import mal.language.letter.Syllable;
+
+import java.util.List;
 
 public class NullAttributor implements Attributor {
     @Override
-    public AttributedSyllabicBlockSequence attribute(SyllableSequence filteredSyllableSequence) {
-        throw new UnsupportedOperationException();
+    public List<AttributedSyllabicBlock> attribute(List<Syllable> syllables) {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 }

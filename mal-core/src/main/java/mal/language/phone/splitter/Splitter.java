@@ -1,8 +1,10 @@
 package mal.language.phone.splitter;
 
-import mal.language.phone.attribute.AttributedSyllabicBlockSequence;
-import mal.language.phone.attribute.AttributedPhonemeSequence;
+import mal.language.phone.attribute.AttributedPhoneme;
+import mal.language.phone.attribute.AttributedSyllabicBlock;
+
+import java.util.List;
 
 public interface Splitter {
-    AttributedPhonemeSequence build(AttributedSyllabicBlockSequence attributedSyllabicBlockSequence);
+    List<AttributedPhoneme> build(List<AttributedSyllabicBlock> attributedSyllabicBlocks);
 }

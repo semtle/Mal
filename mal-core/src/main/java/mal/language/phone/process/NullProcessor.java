@@ -1,10 +1,12 @@
 package mal.language.phone.process;
 
-import mal.language.letter.SyllableSequence;
+import mal.language.letter.Syllable;
+
+import java.util.List;
 
 public class NullProcessor implements SyllableSequenceProcessor {
     @Override
-    public SyllableSequence process(SyllableSequence normalizedSyllableSequence) {
-        throw new UnsupportedOperationException();
+    public List<Syllable> process(List<Syllable> syllables) {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 }

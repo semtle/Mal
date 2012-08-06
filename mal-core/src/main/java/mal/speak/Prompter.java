@@ -1,15 +1,17 @@
 package mal.speak;
 
-import mal.language.phone.attribute.AttributedPhonemeSequence;
+import mal.language.phone.attribute.AttributedPhoneme;
 import mal.language.phone.attribute.AttributedPhone;
+
+import java.util.List;
 
 
 public class Prompter {
-    private AttributedPhonemeSequence script;
+    private List<AttributedPhoneme> script;
 
     private int position = 0;
 
-    public void prepare(AttributedPhonemeSequence script) {
+    public void prepare(List<AttributedPhoneme> script) {
         this.script = script;
     }
 
@@ -17,7 +19,7 @@ public class Prompter {
         throw new UnsupportedOperationException();
     }
 
-    public AttributedPhone next() {
+    public AttributedPhoneme next() {
         throw new UnsupportedOperationException();
     }
 
