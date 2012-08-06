@@ -1,4 +1,4 @@
-package mal.language.voice;
+package mal.language.phone;
 
 import mal.curve.Curve;
 

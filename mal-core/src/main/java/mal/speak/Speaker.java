@@ -1,17 +1,17 @@
 package mal.speak;
 
 import mal.audioplayer.AudioPlayer;
+import mal.language.phone.AttributedPhone;
+import mal.language.phone.PhoneSet;
 import mal.language.phoneme.attribute.AttributedPhoneme;
 import mal.language.phoneme.attribute.AttributedSyllabicBlock;
 import mal.language.phoneme.attribute.Attributor;
 import mal.language.phoneme.attribute.RokStandardAttributor;
-import mal.language.phoneme.splitter.Splitter;
+import mal.language.phoneme.attribute.splitter.Splitter;
 import mal.language.syllable.Syllable;
 import mal.language.syllable.SyllableListBuilder;
-import mal.language.syllable.process.CompositeProcessor;
-import mal.language.syllable.process.Processor;
-import mal.language.voice.AttributedPhone;
-import mal.language.voice.PhoneSet;
+import mal.language.syllable.processor.CompositeProcessor;
+import mal.language.syllable.processor.Processor;
 
 import java.util.List;
 

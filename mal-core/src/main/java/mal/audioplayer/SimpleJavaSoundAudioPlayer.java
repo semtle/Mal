@@ -1,8 +1,8 @@
 package mal.audioplayer;
 
-import mal.language.voice.AttributedPhone;
+import mal.language.phone.AttributedPhone;
 
-public class JavaSoundAudioPlayer implements AudioPlayer {
+public class SimpleJavaSoundAudioPlayer implements AudioPlayer {
     public void playAndWait(AttributedPhone attributedPhone) {
         throw new UnsupportedOperationException();
     }

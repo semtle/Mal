@@ -1,4 +1,4 @@
-package mal.language.phoneme.splitter;
+package mal.language.phoneme.attribute.splitter;
 
 import mal.language.phoneme.attribute.AttributedPhoneme;
 import mal.language.phoneme.attribute.AttributedSyllabicBlock;

@@ -1,4 +1,4 @@
-package mal.language.syllable.process;
+package mal.language.syllable.processor;
 
 import mal.language.syllable.Syllable;
 
