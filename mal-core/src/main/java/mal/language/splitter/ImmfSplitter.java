@@ -1,6 +1,7 @@
-package mal.language.phoneme;
+package mal.language.splitter;
 
-import mal.language.voice.AttributedPhonemeSequence;
+import mal.language.attribute.AttributedSyllabicBlockSequence;
+import mal.language.attribute.AttributedPhonemeSequence;
 
 /**
  * InitialLetter-medial and medial-final builder.

@@ -1,4 +1,4 @@
-package mal.language.phoneme;
+package mal.language.attribute;
 
 import mal.language.letter.SyllableSequence;
 

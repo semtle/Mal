@@ -1,4 +1,4 @@
-package mal.language.phoneme;
+package mal.language.voice;
 
 /**
  * A {@code Phoneme} represents a cognitive unit of spoken language.
