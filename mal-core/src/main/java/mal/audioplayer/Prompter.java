@@ -1,18 +1,19 @@
-package mal;
+package mal.audioplayer;
 
+import mal.language.phoneme.AttributedPhonemeSequence;
 import mal.language.voice.AttributedPhone;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-class Prompter {
-    private List<AttributedPhone> script;
+public class Prompter {
+    private AttributedPhonemeSequence script;
 
     private int position = 0;
 
-    public void prepare(List<AttributedPhone> script) {
-        this.script = new ArrayList<AttributedPhone>(script);
+    public void prepare(AttributedPhonemeSequence script) {
+        this.script = script;
     }
 
     public boolean hasNext() {

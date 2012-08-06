@@ -1,13 +1,18 @@
 package mal;
 
 import mal.audioplayer.AudioPlayer;
-import mal.language.letter.SyllabicBlockSequence;
-import mal.language.letter.SyllabicBlockSequenceBuilder;
-import mal.language.phoneme.PhonemeSequenceBuilder;
+import mal.audioplayer.Prompter;
+import mal.language.phoneme.PhonemeSequenceAttributor;
+import mal.language.phoneme.RokStandardSyllabicBlockSequenceAttributor;
+import mal.language.phoneme.SyllabicBlockSequenceAttributor;
+import mal.language.process.CompositeProcessor;
+import mal.language.process.SyllableSequenceProcessor;
+import mal.language.phoneme.AttributedSyllabicBlockSequence;
+import mal.language.letter.SyllableSequence;
+import mal.language.letter.SyllableSequenceBuilder;
+import mal.language.phoneme.AttributedPhonemeSequence;
 import mal.language.voice.AttributedPhone;
 import mal.language.voice.PhoneSet;
-
-import java.util.List;
 
 
 /**
@@ -15,19 +20,19 @@ import java.util.List;
  */
 public class Speaker {
     private Prompter prompter;
-
     private PhoneSet phoneSet;
-
-    private PhonemeSequenceBuilder phonemeSequenceBuilder;
-
+    private PhonemeSequenceAttributor phonemeSequenceAttributor;
     private AudioPlayer audioPlayer;
-
     private AttributedPhone currentAttributedPhone;
+    private SyllableSequenceProcessor filter = new CompositeProcessor();
+    private SyllabicBlockSequenceAttributor syllabicBlockSequenceAttributor = new RokStandardSyllabicBlockSequenceAttributor();
 
     public void speak(String text) {
-        SyllabicBlockSequence syllabicBlockSequence = SyllabicBlockSequenceBuilder.build(text);
-        List<AttributedPhone> analyzed = phonemeSequenceBuilder.analyze(syllabicBlockSequence);
-        prompter.prepare(analyzed);
+        SyllableSequence originalSyllableSequence = SyllableSequenceBuilder.build(text);
+        SyllableSequence filteredSyllableSequence = filter.process(originalSyllableSequence);
+        AttributedSyllabicBlockSequence attributedSyllabicBlock = syllabicBlockSequenceAttributor.build(filteredSyllableSequence);
+        AttributedPhonemeSequence phonemeSequence = phonemeSequenceAttributor.build(attributedSyllabicBlock);
+        prompter.prepare(phonemeSequence);
         while (prompter.hasNext()) {
             currentAttributedPhone = prompter.next();
             audioPlayer.playAndWait(currentAttributedPhone);

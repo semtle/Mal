@@ -1,12 +1,14 @@
 package mal.language.letter;
 
+import mal.curve.Curve;
+
 import java.util.Arrays;
 import java.util.Iterator;
 
 /**
  * A {@code SyllabicBlock} is
  */
-public class SyllabicBlock implements Iterable<Letter> {
+public class SyllabicBlock implements Iterable<Letter>, Syllable {
     private InitialLetter initialLetter;
     private MedialLetter medialLetter;
     private FinalLetter finalLetter;
