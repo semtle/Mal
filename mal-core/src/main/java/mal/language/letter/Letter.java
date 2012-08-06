@@ -1,4 +1,4 @@
-package mal.korean.grapheme;
+package mal.language.letter;
 
 public interface Letter {
 }

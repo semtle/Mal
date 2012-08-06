@@ -1,6 +1,6 @@
-package mal;
+package mal.audioplayer;
 
-import mal.korean.voice.AttributedPhone;
+import mal.language.voice.AttributedPhone;
 
 public class JavaSoundAudioPlayer implements AudioPlayer {
     public void playAndWait(AttributedPhone attributedPhone) {

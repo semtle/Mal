@@ -1,21 +1,22 @@
 package mal;
 
-import mal.korean.grapheme.SyllabicBlockSequence;
-import mal.korean.grapheme.SyllabicBlockSequenceBuilder;
-import mal.korean.phoneme.PhonemeSequenceBuilder;
-import mal.korean.voice.AttributedPhone;
-import mal.korean.voice.Voice;
+import mal.audioplayer.AudioPlayer;
+import mal.language.letter.SyllabicBlockSequence;
+import mal.language.letter.SyllabicBlockSequenceBuilder;
+import mal.language.phoneme.PhonemeSequenceBuilder;
+import mal.language.voice.AttributedPhone;
+import mal.language.voice.PhoneSet;
 
 import java.util.List;
 
 
 /**
- * A {@code Speaker} speaks a text in a voice.
+ * A {@code Speaker} speaks a text in a phoneSet.
  */
 public class Speaker {
     private Prompter prompter;
 
-    private Voice voice;
+    private PhoneSet phoneSet;
 
     private PhonemeSequenceBuilder phonemeSequenceBuilder;
 

@@ -1,4 +1,4 @@
-package mal.korean.grapheme;
+package mal.language.letter;
 
 import java.util.Iterator;
 

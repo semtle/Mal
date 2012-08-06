@@ -1,6 +1,6 @@
-package mal;
+package mal.audioplayer;
 
-import mal.korean.voice.AttributedPhone;
+import mal.language.voice.AttributedPhone;
 
 /**
  * A {@code AudioPlayer} plays a sound. It has a playback, volume, speed control.

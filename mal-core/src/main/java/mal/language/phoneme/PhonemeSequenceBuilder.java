@@ -1,7 +1,7 @@
-package mal.korean.phoneme;
+package mal.language.phoneme;
 
-import mal.korean.grapheme.SyllabicBlockSequence;
-import mal.korean.voice.AttributedPhone;
+import mal.language.letter.SyllabicBlockSequence;
+import mal.language.voice.AttributedPhone;
 
 import java.util.List;
 

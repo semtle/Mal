@@ -1,13 +1,13 @@
-package mal.wave;
+package mal.curve;
 
 import java.util.SortedMap;
 import java.util.TreeMap;
 
 
 /**
- * A {@code KeyFrameWave} represents a wave that is based on some key frames.
+ * A {@code KeyFrameCurve} represents a curve that is based on some key frames.
  */
-public class KeyFrameWave implements Wave {
+public class KeyFrameCurve implements Curve {
     private SortedMap<Float, Float> keyFrames = new TreeMap<Float, Float>();
 
     public float value(float time) {
