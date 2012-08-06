@@ -7,9 +7,9 @@ import mal.language.phone.attribute.AttributedPhoneme;
 import mal.language.phone.attribute.AttributedSyllabicBlock;
 import mal.language.phone.attribute.Attributor;
 import mal.language.phone.attribute.RokStandardAttributor;
+import mal.language.phone.process.Processor;
 import mal.language.phone.splitter.Splitter;
 import mal.language.phone.process.CompositeProcessor;
-import mal.language.phone.process.SyllableSequenceProcessor;
 import mal.language.phone.attribute.AttributedPhone;
 import mal.language.voice.PhoneSet;
 
@@ -25,7 +25,7 @@ public class Speaker {
     private Splitter splitter;
     private AudioPlayer audioPlayer;
     private AttributedPhone currentAttributedPhone;
-    private SyllableSequenceProcessor filter = new CompositeProcessor();
+    private Processor filter = new CompositeProcessor();
     private Attributor attributor = new RokStandardAttributor();
 
     public void speak(String text) {
