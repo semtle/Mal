@@ -1,5 +1,5 @@
 package mal.language.phoneme;
 
-public interface PhonemeSequenceAttributor {
+public interface Splitter {
     AttributedPhonemeSequence build(AttributedSyllabicBlockSequence attributedSyllabicBlockSequence);
 }
