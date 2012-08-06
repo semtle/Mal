@@ -1,7 +1,7 @@
 package mal.speak;
 
-import mal.language.attribute.AttributedPhonemeSequence;
-import mal.language.attribute.AttributedPhone;
+import mal.language.phone.attribute.AttributedPhonemeSequence;
+import mal.language.phone.attribute.AttributedPhone;
 
 
 public class Prompter {

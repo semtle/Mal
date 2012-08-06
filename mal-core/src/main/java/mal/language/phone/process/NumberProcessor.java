@@ -1,4 +1,4 @@
-package mal.language.process;
+package mal.language.phone.process;
 
 import mal.language.letter.SyllableSequence;
 

@@ -1,4 +1,4 @@
-package mal.language.attribute;
+package mal.language.phone.attribute;
 
 public class AttributedSyllabicBlockSequence {
 }

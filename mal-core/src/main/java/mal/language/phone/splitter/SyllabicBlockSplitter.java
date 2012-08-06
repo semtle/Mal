@@ -1,7 +1,7 @@
-package mal.language.splitter;
+package mal.language.phone.splitter;
 
-import mal.language.attribute.AttributedSyllabicBlockSequence;
-import mal.language.attribute.AttributedPhonemeSequence;
+import mal.language.phone.attribute.AttributedSyllabicBlockSequence;
+import mal.language.phone.attribute.AttributedPhonemeSequence;
 
 public class SyllabicBlockSplitter implements Splitter {
     @Override

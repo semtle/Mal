@@ -1,5 +1,7 @@
 package mal.language.voice;
 
+import mal.language.phone.Phoneme;
+
 import java.io.File;
 import java.util.Map;
 

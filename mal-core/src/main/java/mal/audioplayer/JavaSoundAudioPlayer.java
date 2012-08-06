@@ -1,6 +1,6 @@
 package mal.audioplayer;
 
-import mal.language.attribute.AttributedPhone;
+import mal.language.phone.attribute.AttributedPhone;
 
 public class JavaSoundAudioPlayer implements AudioPlayer {
     public void playAndWait(AttributedPhone attributedPhone) {

@@ -1,8 +1,8 @@
-package mal.language.process;
+package mal.language.phone.process;
 
 import mal.language.letter.SyllableSequence;
 
-public class AlphabetProcessor implements SyllableSequenceProcessor {
+public class PunctuationProcessor implements SyllableSequenceProcessor {
     @Override
     public SyllableSequence process(SyllableSequence syllableSequence) {
         throw new UnsupportedOperationException();

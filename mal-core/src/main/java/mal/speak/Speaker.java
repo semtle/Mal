@@ -1,16 +1,16 @@
 package mal.speak;
 
 import mal.audioplayer.AudioPlayer;
-import mal.language.attribute.Attributor;
-import mal.language.attribute.RokStandardAttributor;
-import mal.language.splitter.Splitter;
-import mal.language.process.CompositeProcessor;
-import mal.language.process.SyllableSequenceProcessor;
-import mal.language.attribute.AttributedSyllabicBlockSequence;
+import mal.language.phone.attribute.Attributor;
+import mal.language.phone.attribute.RokStandardAttributor;
+import mal.language.phone.splitter.Splitter;
+import mal.language.phone.process.CompositeProcessor;
+import mal.language.phone.process.SyllableSequenceProcessor;
+import mal.language.phone.attribute.AttributedSyllabicBlockSequence;
 import mal.language.letter.SyllableSequence;
 import mal.language.letter.SyllableSequenceBuilder;
-import mal.language.attribute.AttributedPhonemeSequence;
-import mal.language.attribute.AttributedPhone;
+import mal.language.phone.attribute.AttributedPhonemeSequence;
+import mal.language.phone.attribute.AttributedPhone;
 import mal.language.voice.PhoneSet;
 
 
